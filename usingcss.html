@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            background-color: blue;
+            color: aliceblue;
+            font: 30px;
+            border: 2px solid black;
+        }
+        .my-class{
+            text-align: right;
+            color: blue;
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        #my-id{
+            color: blueviolet;
+        }
+        button{
+            background-color: aquamarine;
+            /* it have highest prioty */
+            color: blue;
+            padding: 10px;
+            border: none;
+        }
+        .my-btn{
+            background-color: red;
+        }
+        #submil-btn{
+            background-color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="move-top-btn"></button>
+
+    <p style="font-size: 50px; text-align: center; color: brown;">Inline css is used to style individual tasg at once</p>
+    <h3>internal css is used to style entire page at once</h3>
+
+    <h3>na,me selecter is used to select the name element by their tag name</h3>
+
+    <h4 class="my-class">Class selector is used to selct elemnt by their class name</h4>
+
+    <h1 class="my-class">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptatum.</h1>
+
+    <h2 id="my-id">ID SELECTOR IS USED to select element by their id name</h2>
+
+    <button class="my-btn" id="submil-btn">css priorities</button>
+
+</body>
+</html>
