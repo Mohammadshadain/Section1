@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        :root{
+            --theme-color:brown;
+            --accent-color:wheat;
+        }
+        *{
+            font-family:Montserrat;
+        }
+        .card{
+            border: 2px solid red;
+            width: 20%;
+            box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.411);
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: aliceblue;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: var(--accent-color); */
+            background-image: url('https://images.unsplash.com/photo-1551733182-f43f932f3288?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            margin: 0;
+
+
+        }
+        .form-title{
+            text-align: center;
+            font-family:Montserrat ;
+        }
+        .text-input,.submit-btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .text-input{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid var(--theme-color);
+            background-color: antiquewhite;
+        }
+        .submit-btn{
+            padding: 5px;
+            background-color: var(--theme-color);
+            color: wheat;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .link{
+            color: var(--theme-color);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .signup-link{
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .Brand{
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--theme-color);
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 class="Brand">Brand Name</h2>
+        <h3 class="form-title">Login Form</h3>
+        <form >
+            <label for="email">Email address</label>
+            <input class="text-input"type="email" id="email">
+            <label for="password">password</label>
+            <input class="text-input" type="password" id="password">
+
+            <a class="link forgot-link" href="#">Forgot password?</a>
+
+            <button class="submit-btn">submit</button>
+            <a class="link singup-link" href="singup-link">Not Registered yet? singup</a>
+        </form>
+    </div>
+</body>
+</html>
