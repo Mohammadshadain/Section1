@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            font-family: Montserrat;
+        }
+        .card{
+
+            border: 2px solid brown;
+            width: 20%;
+            box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.411);
+            padding: 30px;
+            border-radius: 10px ;
+            box-sizing: border-box;
+            background-color:whitesmoke;
+      
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            margin: 0;
+            background-image: url(https://www.iul.ac.in/img/aboutusimage.jpeg?v=190&format=webp);
+        }
+        .Login{
+            text-align: center;
+            font-family:sans-serif;
+        }
+        .Text-input,.submit-btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+        .Text-input{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2PX solid brown;
+            background-color: rgb(202, 196, 187);
+        }
+        .submit-btn{
+            padding: 5px;
+            background-color: brown;
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .Link{
+            color: brown;
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+        }
+        .singup-link{
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .brand{
+            text-align: center;
+            text-transform: uppercase;
+            color: brown;
+            font-family: sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+ <div class="card">
+    <h2 class="brand">Integral University</h2>
+    <h3 class="Login"> Login Form</h3>
+    <form >
+        <label for="email"> Email address</label>
+        <input class="Text-input" type="email" id="email">
+        <label for="password">password</label>
+        <input class="Text-input" type="password" id="password">
+        <a class="Link forgot-link" href="#">Forgot password?</a>
+
+        <button class="submit-btn">Submit</button>
+        <a class="Link singup-link" href="singup link">Not Registered yet? singup</a>
+
+    </form>
+ </div>  
+</body>
+</html>
