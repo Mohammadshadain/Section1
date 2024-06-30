@@ -1,0 +1,28 @@
+// 3 type loop
+// for loop
+for(let i=0;i<=10; i++){
+    console.log('i');
+}
+
+console.log("while loop");
+let n=10;
+while(n<=20){
+    console.log(n);
+    n+=2;
+}
+
+console.log('------------------------------do-while loo--------------');
+const k=10;
+do{
+    console.log(k);
+}while(k>20);
+
+
+
+
+// for printing the whole array
+console.log('-----------------for-of loop-----------------');
+const nums=[234,646,834,39,890,2];
+for (let a of nums){
+    console.log(a);
+}
