@@ -1,7 +1,7 @@
 const arr=[65,'hiii',true,console.log, Boolean];
 console.log(arr);
 console.log(typeof arr);
-console.log(Array.isArray(arr));
+console.log(Array.isArray(arr)); // arrays hai ki nhi ye check krta h
 console.log(arr.length);       //also works in string
 
 console.log('\n================================');
