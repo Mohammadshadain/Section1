@@ -26,7 +26,7 @@ console.log('--------------------------------using for each fn...');
 nums.forEach((a,i)=>{ console.log(a,i);})// callback function is very important here
 
 
-// phla parameter for each me valur dega and dursa parameter inde dega
+// phla parameter for each me valur dega and dursa parameter index dega
 
 
 // square using for each fn
