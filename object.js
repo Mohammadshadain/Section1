@@ -54,7 +54,7 @@ console.log(smartphone.color[1][3][0]);
 
 
 // replace green with two different colors
-smartphone.color.splice(1,1,'light green','darkgreen');  // phla index ,dusra kitna remove krna h
+smartphone.color.splice(1,1,'light green','darkgreen');  // phla index ,dusra kitna remove krna h,third jo bhi replace krna h
 console.log(smartphone.color);
 
 
@@ -65,6 +65,17 @@ const smartphoneArray=[
         price:100000,
         color:['white','green','black']
     },
+
+    {
+        brand:'apple',
+        model:'iphone 13',
+        price:999999999,
+        color:['gray','dark-green','black']
+    },
+
+
+
+
     {
         brand:'MI',
         model:'poco X2',
@@ -76,6 +87,12 @@ const smartphoneArray=[
         model:'s20 ultra',
         price:150000,
         color:['off-white','sea-green','black']
+    },
+    {
+        brand:'samsumg',
+        model:'s10ultra',
+        price:159999,
+        color:['dark-white','light-green','-dark-black']
     },
     {
         brand:'onePlus',
@@ -106,10 +123,58 @@ console.log(smartphoneArray[2].color);
 // crate a array containg all thr brand of smatphone
 
 const brand1=smartphoneArray.map((n)=>{return n.brand});
-console.log(brand1);
+// console.log(new set( brand1));
+// console.log(Array.from(new set(brand1)));
+// console.log(Array.from('apple'));
+
+
+
 
 
 // filter all smartphone containg white color
 
     console.log(smartphoneArray.filter((phone)=>{return phone.color.includes('white')}));
+
+    // filter all apple smartphone
+
+    const keyword='pple';
+    const applesmartphone=smartphoneArray.filter((phone)=>{return phone.brand.toLowerCase()===keyword.toLowerCase()});
+    console.log(applesmartphone);
+
+
+    // if the user pass wrong inputt like 'apple ka plle or appl etc
+    const applesmartphone2=smartphoneArray.filter((phone)=>{return phone.brand.toLowerCase().includes(keyword.toLowerCase())});
+    console.log(applesmartphone2);
+
+
+    // concaineate the arry
+
+    [
+       '1.  apple  iphone16 -79000',
+  '2.  apple  iphone16 -79000',
+  '3.  apple  iphone16 -79000',
+  '4.  apple  iphone16 -79000',
+  '5.  apple  iphone16 -79000',
+  '6.  apple  iphone16 -79000',
+  '7.  apple  iphone16 -79000',
+    ]
     
+
+
+
+
+    let [brand,model,price]=['apple', 'iphone16',79000];
+    console.log(` ${brand}  ${model} -${price}`);
+
+const kuchbhi=smartphoneArray.map((phone ,i)=>{return `${i+1}.  ${brand}  ${model} -${price}`})
+console.log(kuchbhi);  
+
+
+const phonecolor=smartphoneArray.map((phone)=>{return phone.color.map((c)=>{return`${phone.brand} ${phone.model} (${c})`})}).flat();
+
+console.log(phonecolor);
+
+
+
+
+
